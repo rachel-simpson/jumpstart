@@ -1,59 +1,132 @@
+/* page styles */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  color: white;
+  font-family: "Monoton";
+  font-size: 7.1rem;
+  text-shadow: 1px 1px #000, -1px -1px #000, -1px 1px #000, -1px 1px #000;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.4rem;
+}
+
+h3 {
+  color: #399bd1;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 1.4rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* navbar styles */
 
 nav {
-  background-color: #ebebeb;
+  /* background-color: #ebebeb; */
 }
 
 a {
   color: #818181;
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .active {
-  color: SkyBlue;
-  font-family: "Open Sans";
+  color: #399bd1;
+  /* font-family: "Open Sans"; */
 }
+
+/* jumbotron styles */
 
 .jumbotron-bike {
   background-image: url(../images/jumbotron-bike.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  padding: 11.85rem 0;
   text-align: center;
-}
-
-.jumbotron-bike h1 {
-  color: white;
-  font-family: "Monoton";
-  font-size: 150px;
-  text-shadow: 1px 1px black, -1px -1px black;
 }
 
 .jumbotron-bike p {
   color: white;
-  font-family: "Open Sans";
-  font-size: 24px;
-  text-shadow: 1px 1px black, -1px -1px black;
+  /* font-family: "Open Sans"; */
+  font-size: 1.4rem;
+  margin: 0 auto;
+  text-shadow: 1px 1px #000, -1px -1px #000, -1px 1px #000, -1px 1px #000;
+  width: 51.3rem;
 }
 
+/* jumbotron button dynamic styles */
+
 .btn-primary {
- transition: box-shadow, 3s;
+  background-color: #399bd1;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+  font-size: 1.2rem;
+  margin-top: 2.8rem;
+  padding: 1.3rem 0;
+  transition: box-shadow, 1s;
+  width: 11.4rem;
 }
 
 .btn-primary:hover {
-  box-shadow: 1px 1px 1px black, -1px -1px 1px black;
-
+  box-shadow: 0 0 12px rgba(0, 0, 0, .9);
 }
 
 .btn-primary:active {
-  border: 0;
-  box-shadow: 0 0 0;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+}
+
+/* featured project styles */
+
+.featured {
+  margin-bottom: 5.85rem;
 }
 
 .image-container img {
   max-width: 100%;
 }
 
+.categories li {
+  color: rgba(0, 0, 0, .7);
+  line-height: 1.4;
+}
+
+#categories {
+  color: #399bd1;
+}
+
+/* other project styles */
+
+.projects {
+  margin-bottom: 5.85rem;
+}
+
 .projects img {
+  margin-bottom: 20px;
   opacity: .5;
+}
+
+/* footer project styles */
+
+footer {
+  background-color: #f3f3f3;
+  padding: 5.2rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0 auto;
+  width: 42rem;
 }
