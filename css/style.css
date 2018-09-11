@@ -3,6 +3,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  min-width: 400px;
 }
 
 h1 {
@@ -30,22 +31,28 @@ h4 {
   font-weight: bold;
 }
 
-/* navbar styles */
-
-nav {
-  /* background-color: #ebebeb; */
+@media only screen and (max-width: 990px) {
+  h1 {
+    font-size: 5.7rem;
+  }
 }
+
+/* navbar styles */
 
 a {
   color: #818181;
-  /* font-family: "Open Sans"; */
   font-size: 1.1rem;
   font-weight: 600;
 }
 
 .active {
   color: #399bd1;
-  /* font-family: "Open Sans"; */
+}
+
+@media only screen and (max-width: 720px) {
+  .navbar-brand {
+    display: none;
+  }
 }
 
 /* jumbotron styles */
@@ -61,11 +68,12 @@ a {
 
 .jumbotron-bike p {
   color: white;
-  /* font-family: "Open Sans"; */
   font-size: 1.4rem;
   margin: 0 auto;
+  max-width: 51.3rem;
+  padding: 0 1.4rem;
   text-shadow: 1px 1px #000, -1px -1px #000, -1px 1px #000, -1px 1px #000;
-  width: 51.3rem;
+
 }
 
 /* jumbotron button dynamic styles */
@@ -95,6 +103,7 @@ a {
 }
 
 .image-container img {
+  margin-bottom: 20px;
   max-width: 100%;
 }
 
@@ -114,7 +123,6 @@ a {
 }
 
 .projects img {
-  margin-bottom: 20px;
   opacity: .5;
 }
 
@@ -128,5 +136,6 @@ footer {
 
 footer p {
   margin: 0 auto;
-  width: 42rem;
+  max-width: 42rem;
+  padding: 0 1.4rem;
 }
