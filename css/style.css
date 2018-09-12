@@ -68,6 +68,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 44rem;
   padding: 11.85rem 0;
   text-align: center;
 }
@@ -97,20 +98,27 @@ a {
   background-image: url(../images/jumbotron-duffel.jpg);
 }
 
+.jump-in {
+  position: relative;
+  text-align: center;
+  top: -11rem;
+  width: 100%;
+}
 
 /* jumbotron button dynamic styles */
 
 .btn-primary {
   background-color: #399bd1;
+  border: 0;
   box-shadow: 0 0 3px rgba(0, 0, 0, .5);
   font-size: 1.2rem;
-  margin-top: 2.8rem;
   padding: 1.3rem 0;
   transition: box-shadow, 1s;
   width: 11.4rem;
 }
 
 .btn-primary:hover {
+  background-color: #399bd1;
   box-shadow: 0 0 12px rgba(0, 0, 0, .9);
 }
 
@@ -121,15 +129,19 @@ a {
 /* featured project styles */
 
 .featured {
-  margin-bottom: 5.85rem;
+  margin: -3rem auto 3rem auto;
 }
 
 .image-container {
+  margin-bottom: 20px;
   overflow: hidden;
 }
 
+.featured .image-container {
+  height: 19rem;
+}
+
 .image-container img {
-  margin-bottom: 20px;
   max-width: 100%;
   opacity: .7;
   transition: opacity, .5s;
@@ -152,7 +164,11 @@ a {
 /* other project styles */
 
 .projects {
-  margin-bottom: 5.85rem;
+  margin: 3rem auto;
+}
+
+.projects .image-container {
+  height: 13.5rem;
 }
 
 /* footer project styles */
@@ -164,7 +180,7 @@ footer {
 }
 
 footer p {
-  margin: 0 auto;
+  margin: 0 auto 1.8rem auto;
   max-width: 42rem;
   padding: 0 1.4rem;
 }
